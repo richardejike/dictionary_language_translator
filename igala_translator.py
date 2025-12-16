@@ -21,25 +21,14 @@ igala_dictionary = {
     "heat": "utola"
 }
 
-def translate_to_igala(word):
-    word = word.lower()
-
-if word in igala_dictionary:
-    return igala_dictionary[word]
-else:
-    return "Word not found in the Igala dictionary."
-
-print("English to Igala Dictionary Translator")
-print("------------------------------------")
-
 while True:
-    english_word = input("Enter an English word (or type 'exit' to quit): ")
-    
-if english_word.lower() == "exit":
-    print("Thank you for using the translator.")
-    break
+    key = input("Enter an English word (or type 'exit' to quit): ").lower()
 
-igala_word = translate_to_igala(english_word)
+    if key == "exit":
+        print("Goodbye!")
+        break
 
-print("Igala meaning:", igala_word)
-print()
+    if key in igala_dictionary:
+        print(key, "means", igala_dictionary[key])
+    else:
+        print("Sorry, word not found.")
