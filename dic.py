@@ -1,24 +1,24 @@
 igbo_word = {
-    "Mother": "Nne",
-    "Father": "Nna",
-    "Brother": "Nwanne nwoke",
-    "Sister": "Nwanne nwaanyị",
-    "Child": "Nwa",
-    "House": "Ụlọ",
-    "Food": "Nri",
-    "Water": "Mmiri",
-    "School": "Ụlọ akwụkwọ",
-    "University": "Mahadum",
-    "Yes": "Ee",
-    "No": "Mba",
-    "Good": "Ọma",
-    "Bad": "Ọjọọ",
-    "Five": "Ise",
-    "Ten": "Iri",
-    "One": "Otu",
-    "Help": "Enyemaka",
-    "Please": "Biko",
-    "Thank You": "Daalụ"
+    "Nne": "Mother" ,
+    "Nna": "Father" ,
+    "Nwanne nwoke": "Brother" ,
+    "Nwanne nwaanyi": "Sister" ,
+    "Nwa": "Child",
+    "Ulo": "House",
+    "Nri": "Food",
+    "Mmiri": "Water",
+    "Ulo akwukwo": "School",
+    "Mahadum": "University",
+    "Ee": "Yes",
+    "Mba": "No",
+    "Oma": "Good",
+    "Ojoo": "Bad",
+    "Ise": "Five",
+    "Iri": "Ten",
+    "Otu": "One",
+    "Enyemaka": "Help",
+    "Biko": "Please",
+    "Daalụ": "Thank You"
 }
 
 key = input("Enter an English word: ")
@@ -26,4 +26,5 @@ key = input("Enter an English word: ")
 if key in igbo_word:
     print(f"{key} means {igbo_word[key]}")
 else:
+
     print("Sorry, word not found")
